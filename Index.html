@@ -3,170 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Status Saver Pro</title>
+    <title>Privacy Policy | Status Saver Pro</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+        :root {
+            --primary-color: #0f172a;
+            --secondary-color: #334155;
+            --accent-color: #10b981;
+            --bg-color: #f8fafc;
+            --text-color: #334155;
         }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
         h1 {
-            color: #2c3e50;
-            font-size: 28px;
+            color: var(--primary-color);
+            font-size: 2.2rem;
             margin-bottom: 10px;
         }
+
+        .date {
+            color: #64748b;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
         h2 {
-            color: #34495e;
-            font-size: 22px;
-            margin-top: 30px;
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 35px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
+            display: flex;
+            align-items: center;
         }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background-color: var(--accent-color);
+            margin-right: 10px;
+            border-radius: 2px;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
         p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-bottom: 16px;
         }
+
         ul {
-            margin-bottom: 15px;
-            padding-left: 25px;
+            margin-bottom: 20px;
+            padding-left: 20px;
         }
+
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
+
+        .highlight-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
         }
-        .effective-date {
-            color: #7f8c8d;
-            font-style: italic;
-            text-align: center;
+
+        .contact-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
         }
-        .footer {
+
+        .contact-card a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
             text-align: center;
             margin-top: 50px;
             padding-top: 20px;
-            border-top: 1px solid #bdc3c7;
-            color: #7f8c8d;
-            font-size: 14px;
+            border-top: 1px solid #f1f5f9;
+            color: #94a3b8;
+            font-size: 0.9rem;
         }
-        .contact-info {
-            background-color: #ecf0f1;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        strong {
-            color: #2c3e50;
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
+
+<div class="container">
+    <header>
         <h1>Privacy Policy</h1>
         <p><strong>Status Saver Pro</strong></p>
-        <p class="effective-date">Last Updated: May 2024</p>
-    </div>
+        <p class="date">Last Updated: May 2024</p>
+    </header>
 
     <h2>1. Introduction</h2>
-    <p>Welcome to Status Saver Pro. This Privacy Policy explains how Status Saver Pro ("we", "our", or "the App") developed by Yuvraj Singh handles information when you use our Android application. We are committed to protecting your privacy and being transparent about our practices.</p>
-    <p>Status Saver Pro is designed to help you save and manage WhatsApp statuses, generate stylish fonts, send direct messages, and provide additional utility features. We do not intentionally collect personal information from our users. This policy describes what information may be processed through the App and how third-party services (like Google AdMob and Firebase) integrated into the App collect data.</p>
-    <p>By using Status Saver Pro, you agree to the terms outlined in this Privacy Policy. If you do not agree with this policy, please do not use the App.</p>
+    <p>Hi there! Thanks for choosing Status Saver Pro. I built this app to give you a smooth, feature-rich experience for saving statuses, sending direct messages, and generating stylish text. Your privacy is a top priority for me.</p>
+    <p>This policy explains exactly what happens to your data when you use the app. Spoiler alert: <strong>Your private data stays private.</strong> We do not secretly collect or steal your personal information.</p>
+    <p>Because the app is free, it uses some third-party services (like Google AdMob and Firebase) to show ads and catch crashes. This policy covers how those services work within the app.</p>
 
-    <h2>2. Information We Collect</h2>
-    <p>Status Saver Pro does not intentionally collect, store, or transmit personal information that identifies you as an individual. However, certain information is collected automatically by third-party services integrated into the App to ensure stability and show advertisements:</p>
+    <h2>2. What Information Do We Collect?</h2>
+    <p>Let's clear the air right away: we do not want, nor do we collect, your personal chats or contacts.</p>
 
-    <h3>2.1 Information We Do NOT Collect</h3>
+    <h3>2.1 Data We NEVER Collect</h3>
     <ul>
         <li>Your name, email address, or phone number.</li>
-        <li>WhatsApp account credentials or login information.</li>
-        <li>Content of your WhatsApp messages, chats, or personal media.</li>
-        <li>Your contacts list.</li>
-        <li>Biometric data (fingerprint or face data is only used locally on your device for the App Lock feature and is never stored or transmitted).</li>
+        <li>Your WhatsApp login details or account information.</li>
+        <li>Your contacts, private chats, or personal media.</li>
+        <li><strong>Biometric Data:</strong> If you use the App Lock feature, your fingerprint or face scan is processed securely by your phone's own operating system. It never leaves your device.</li>
     </ul>
 
-    <h3>2.2 Information Automatically Collected (via Third-Party SDKs)</h3>
-    <p>To improve our app and serve advertisements, integrated third-party SDKs (Google Firebase & AdMob) may collect the following data types:</p>
+    <h3>2.2 Data Collected Automatically (By Google SDKs)</h3>
+    <p>To keep the app running smoothly and to display ads, we use Google's trusted tools (Firebase & AdMob). They automatically collect some non-personal background data, such as:</p>
     <ul>
-        <li><strong>Device or other IDs:</strong> Non-personal technical information such as device model, OS version, and Advertising IDs (Android Advertising ID) for analytics and advertising purposes.</li>
-        <li><strong>App Activity:</strong> Information about how you interact with the App (features used, session duration) to help us understand user behavior.</li>
-        <li><strong>Crash Logs & Diagnostics:</strong> Through Firebase Crashlytics, technical information about app crashes and errors is collected to improve app stability and performance.</li>
+        <li><strong>Device Information:</strong> Your phone model, Android version, and Advertising IDs (to show relevant ads).</li>
+        <li><strong>App Activity:</strong> Basic stats like how long the app is used or which features are popular.</li>
+        <li><strong>Crash Logs:</strong> If the app crashes, Firebase sends an anonymous error report so I can fix the bug in the next update.</li>
     </ul>
 
-    <h3>2.3 Information You Provide</h3>
+    <h3>2.3 Data You Process Locally</h3>
     <ul>
-        <li><strong>Direct Message Feature:</strong> When you use the Direct Message feature to send messages without saving contacts, the phone numbers and text are processed locally. This information is NOT stored by us and is passed directly to the official WhatsApp application.</li>
-        <li><strong>Stylish Font Text:</strong> Any text you enter into the Font Generator is processed locally on your device and is not transmitted anywhere.</li>
+        <li><strong>Direct Message:</strong> When you enter a phone number to send a direct WhatsApp message, the app simply passes that number to your official WhatsApp. We do not save that number on any server.</li>
+        <li><strong>Fancy Text:</strong> The text you type to generate stylish fonts is processed instantly on your phone.</li>
     </ul>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>The information collected through integrated services is used for the following purposes:</p>
+    <h2>3. How We Use This Information</h2>
+    <p>The technical data collected by our third-party tools is used strictly to:</p>
     <ul>
-        <li><strong>App Functionality:</strong> To provide core features including saving statuses, generating stylish fonts, and enabling direct messaging.</li>
-        <li><strong>App Improvement:</strong> To analyze usage patterns, identify bugs, and improve overall performance.</li>
-        <li><strong>Crash Reporting:</strong> To detect, diagnose, and fix technical issues through Firebase Crashlytics.</li>
-        <li><strong>Advertising:</strong> To display relevant advertisements through Google AdMob, which uses your advertising identifier to show personalized ads.</li>
+        <li>Make sure the app works perfectly on your specific device.</li>
+        <li>Find and fix bugs quickly (using Crashlytics).</li>
+        <li>Serve appropriate advertisements to support the app's development.</li>
     </ul>
 
-    <h2>4. Data Security & Encryption</h2>
-    <p>We take the security of your information seriously and implement appropriate technical measures:</p>
+    <h2>4. Security & Where Your Data Lives</h2>
+    <div class="highlight-box">
+        <p><strong>Everything happens on your device.</strong> Your saved videos and images are stored in your phone's local gallery. I do not have a server or database that stores your statuses.</p>
+    </div>
     <ul>
-        <li><strong>Encryption in Transit:</strong> Any data transmitted to our third-party service providers (Google AdMob, Firebase) is encrypted in transit using secure protocols (HTTPS).</li>
-        <li><strong>Local Processing:</strong> Most app features (status saving, font generation, App Lock) are processed entirely locally on your device.</li>
-        <li><strong>No Central Database:</strong> We do not own or maintain any central database storing user information or saved statuses.</li>
-        <li><strong>Biometric Security:</strong> Biometric authentication is handled exclusively by your device's secure OS environment.</li>
+        <li><strong>Encryption in Transit:</strong> Any technical data sent to Google (like crash reports or ad requests) is encrypted securely over the internet (HTTPS).</li>
+        <li><strong>Local Processing:</strong> Core features like status saving and App Lock run entirely offline.</li>
     </ul>
 
-    <h2>5. Advertising and Third-Party Services</h2>
-    <p>Status Saver Pro integrates the following third-party services, which have their own privacy policies:</p>
+    <h2>5. Why We Ask For Storage Permissions</h2>
+    <p>To do its job, the app needs permission to view and save files. Here is exactly why we need it:</p>
+    
+    <h3>For Android 11 and Above (Scoped Storage)</h3>
+    <p>We use Android's safest method called the <strong>Storage Access Framework (SAF)</strong>. We will ask you to grant access <em>only</em> to the specific WhatsApp `.Statuses` folder. We cannot access your private camera roll, documents, or other folders. We only read the statuses you explicitly allow us to see.</p>
 
-    <h3>5.1 AdMob (Google)</h3>
-    <p>We display advertisements using Google AdMob. AdMob may collect and use your advertising identifier to provide personalized advertisements. You can learn more about how Google uses data at: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
-
-    <h3>5.2 Firebase Services (Google)</h3>
-    <p>We use Firebase Analytics (for usage data), Firebase Crashlytics (for crash reports), and Firebase Cloud Messaging (for push notifications). These services are governed by Google's Privacy Policy.</p>
-
-    <h2>6. Storage Access Permissions Explained</h2>
-    <p>Status Saver Pro requires storage permissions to function properly. We respect your privacy and only access exactly what is needed:</p>
-
-    <h3>6.1 Android 11 and Above (Scoped Storage / SAF)</h3>
-    <p>For modern Android devices, we use the <strong>Storage Access Framework (SAF)</strong>. The app will ask you to grant access specifically to the `.Statuses` folder of WhatsApp/WhatsApp Business. <strong>We do not request broad access to all your files.</strong> We can only read the statuses you explicitly allow us to see.</p>
-
-    <h3>6.2 Android 10 and Below</h3>
+    <h3>For Android 10 and Below</h3>
     <ul>
-        <li><strong>READ_EXTERNAL_STORAGE:</strong> To display WhatsApp statuses saved on your device.</li>
-        <li><strong>WRITE_EXTERNAL_STORAGE:</strong> To save your chosen status images and videos to your device's gallery (Pictures/StatusSaver folder).</li>
+        <li><strong>Read Storage:</strong> To find and display the statuses currently loaded on your device.</li>
+        <li><strong>Write Storage:</strong> To save the statuses you want to keep permanently into a dedicated folder in your gallery.</li>
     </ul>
-    <p><strong>Important:</strong> All saved statuses remain on your device. We do not upload your saved photos or videos to any external server.</p>
+
+    <h2>6. Third-Party Services</h2>
+    <p>We rely on Google services to power certain parts of the app. You can read their privacy policies here:</p>
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMob (for ads) & Firebase (for analytics and crash reporting)</a></li>
+    </ul>
 
     <h2>7. Children's Privacy</h2>
-    <p>Status Saver Pro is not intended for use by children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided information, please contact us.</p>
+    <p>Status Saver Pro is not built for, nor directed at, children under the age of 13. We do not knowingly collect any data from children.</p>
 
-    <h2>8. Your Consent & Opt-Out Rights</h2>
-    <p>By using Status Saver Pro, you consent to this Privacy Policy. You have the right to:</p>
+    <h2>8. Your Rights & Choices</h2>
+    <p>You are always in control of your experience:</p>
     <ul>
-        <li>Uninstall the App at any time, which removes all locally stored app data.</li>
-        <li>Opt-out of personalized advertising by navigating to your device's Settings > Google > Ads > "Opt out of Ads Personalization".</li>
-        <li>Disable App Lock or Push Notifications through the App's settings.</li>
+        <li><strong>Uninstalling:</strong> You can delete the app anytime. Doing so removes all app data (though files you explicitly saved to your gallery will remain yours to keep).</li>
+        <li><strong>Ad Preferences:</strong> You can opt out of personalized ads directly from your phone's settings (Settings > Google > Ads > Opt out of Ads Personalization).</li>
+        <li><strong>App Lock:</strong> You can disable the biometric lock anytime from within the app settings.</li>
     </ul>
 
-    <h2>9. Contact Information</h2>
-    <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy or our practices, please contact us:</p>
+    <h2>9. Got Questions? Contact Me</h2>
+    <p>If you have any questions, doubts, or suggestions about this privacy policy or the app itself, I'd love to hear from you.</p>
     
-    <div class="contact-info">
+    <div class="contact-card">
         <p><strong>Developer:</strong> Yuvraj Singh</p>
-        <p><strong>App Name:</strong> Status Saver Pro</p>
+        <p><strong>App:</strong> Status Saver Pro</p>
         <p><strong>Email:</strong> <a href="mailto:yuvrajsinghdevda009@gmail.com">yuvrajsinghdevda009@gmail.com</a></p>
     </div>
 
-    <div class="footer">
+    <footer>
         <p>&copy; 2024 Yuvraj Singh. All rights reserved.</p>
-        <p>Status Saver Pro Privacy Policy</p>
-    </div>
+        <p>Status Saver Pro</p>
+    </footer>
+</div>
+
 </body>
 </html>
